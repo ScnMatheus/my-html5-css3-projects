@@ -8,15 +8,20 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imgs/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: scroll;*/
+
+            /* shorthand - background : color > image > position > repeat > [size] > attachment */
+            background-size: cover;
+            background: black url('imgs/wallpaper002.jpg') center center no-repeat fixed;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
